@@ -17,7 +17,7 @@ We need to rely on a few tools in the Tools folder inside CommmonTools
     __weak __typeof(self)weakSelf = self;
     [JYEmptyView emptyViewWithSuperView:self.view imageName:@"nonetwork" labTitles:[NSMutableArray arrayWithObjects:@"网络连接失败", nil] buttonTitle:@"点击重试" myBlcok:^(UIButton *btn) {
 
-    NSLog(@"%s", __func__);
+    NSLog(@"%s---%@", __func__, btn);
 
     // 按钮的点击事件
     __strong __typeof(weakSelf)strongSelf = weakSelf;
